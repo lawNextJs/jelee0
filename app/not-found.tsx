@@ -1,3 +1,14 @@
+import { Metadata } from 'next'
+
+export const metadata: Metadata = {
+    title: 'Not Found',
+    // description: 'Not Found DESC.'
+}
+
 export default function() {
-    return (<h1>this is not found page</h1>)
+    return (
+        <div>
+            <h1>this is not found page</h1>
+        </div>
+    )
 }
