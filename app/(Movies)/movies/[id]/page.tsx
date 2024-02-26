@@ -11,11 +11,10 @@ export const metadata: Metadata = { title: 'Movie' }
 export default async function MovieDetail({params: {id}}: {params: {id: string}}) {
     return (
         <div>
-            <h1>Movie Detail Page</h1>
             <Suspense fallback={<h1>Loading movie info</h1>}> {/*fallback is like PLACE_HOLDER*/}
                 <MovieInfo id={id} />
             </Suspense>
-            <Suspense fallback={<h1>Loading movie videos</h1>}>
+            {/* <Suspense fallback={<h1>Loading movie videos</h1>}>
                 <MovieVideos id={id} />
             </Suspense>
             <Suspense fallback={<h1>Loading movie credits</h1>}>
@@ -26,7 +25,7 @@ export default async function MovieDetail({params: {id}}: {params: {id: string}}
             </Suspense>
             <Suspense fallback={<h1>Loading movie similar</h1>}>
                 <MovieSimilar id={id} />
-            </Suspense>
+            </Suspense> */}
         </div>
     )
 }
