@@ -1,7 +1,9 @@
-import { API_MOVIE_LIST_URL } from '../app/(Home)/page'
+import { API_URL } from '../(Home)/page'
+
+// const API_URL = 'https://nomad-movies.nomadcoders.workers.dev/movies'
 
 async function getProviders(id: string) {
-    const response = await fetch(`${API_MOVIE_LIST_URL}/${id}/providers`)
+    const response = await fetch(`${API_URL}/${id}/providers`)
     const json = await response.json()
     return json
 }

@@ -2,7 +2,6 @@ import { Metadata } from 'next'
 
 export const metadata: Metadata = {
     title: 'Not Found',
-    // description: 'Not Found DESC.'
 }
 
 export default function() {
