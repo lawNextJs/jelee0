@@ -1,5 +1,5 @@
-import { API_URL } from '../(Home)/page'
-// const API_URL = 'https://nomad-movies.nomadcoders.workers.dev/movies'
+// import { API_URL } from '../(Home)/page'
+const API_URL = 'https://nomad-movies.nomadcoders.workers.dev/movies'
 
 async function getCredits(id: string) {
     const response = await fetch(`${API_URL}/${id}/credits`)

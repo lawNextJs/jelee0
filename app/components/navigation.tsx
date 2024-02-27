@@ -3,7 +3,7 @@
 import Link from 'next/link'
 import { usePathname } from 'next/navigation'
 import { useState } from 'react'
-import NestedClientComponent from './nestedClientComponent'
+// import NestedClientComponent from './nestedClientComponent'
 import styles from '../styles/navigation.module.css'
 
 export default function Navigation() {
@@ -20,9 +20,6 @@ export default function Navigation() {
                 </li>
                 {/* <li>
                     <button onClick={() => setCount(c => ++c)}>{count}</button>
-                </li>
-                <li>
-                    <NestedClientComponent />
                 </li> */}
             </ul>
         </nav>

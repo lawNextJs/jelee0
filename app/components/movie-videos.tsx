@@ -1,6 +1,8 @@
 // import { error } from "console"
-import { API_URL } from '../(Home)/page'
+// import { API_URL } from '../(Home)/page'
 import styles from '../styles/movie-videos.module.css'
+
+const API_URL = 'https://nomad-movies.nomadcoders.workers.dev/movies'
 
 async function getVideos(id: string) {
     // await new Promise(resolve => setTimeout(resolve, 5000))
