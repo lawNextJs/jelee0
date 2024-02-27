@@ -1,12 +1,9 @@
-// import { API_URL } from '../(Home)/page'
+import { API_MOVIE_LIST } from '../app/api-path'
 import styles from '../styles/movie-info.module.css'
-
-const API_URL = 'https://nomad-movies.nomadcoders.workers.dev/movies'
 
 export async function getMovie(id: string) {
     // await new Promise(resolve => setTimeout(resolve, 1000))
-    console.log(API_URL)
-    const response = await fetch(`${API_URL}/${id}`)
+    const response = await fetch(`${API_MOVIE_LIST}/${id}`)
     const json = await response.json()
     return json
 }

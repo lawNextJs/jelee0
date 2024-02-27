@@ -1,9 +1,7 @@
-// import { API_URL } from '../(Home)/page'
-
-const API_URL = 'https://nomad-movies.nomadcoders.workers.dev/movies'
+import { API_MOVIE_LIST } from '../app/api-path'
 
 async function getSimilars(id: string) {
-    const response = await fetch(`${API_URL}/${id}/similar`)
+    const response = await fetch(`${API_MOVIE_LIST}/${id}/similar`)
     const json = await response.json()
     return json
 }

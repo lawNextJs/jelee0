@@ -1,16 +1,12 @@
 import { Metadata } from 'next'
 import { Suspense } from 'react'
-import MovieInfo, { getMovie } from '../../../components/movie-info'
-import MovieVideos from '../../../components/movie-videos'
-import MovieProviders from '../../../components/movie-providers'
-import MovieSimilar from '../../../components/movie-similar'
-import MovieCredits from '../../../components/movie-credits'
+import MovieInfo, { getMovie } from '../../../../components/movie-info'
+import MovieVideos from '../../../../components/movie-videos'
+import MovieProviders from '../../../../components/movie-providers'
+import MovieSimilar from '../../../../components/movie-similar'
+import MovieCredits from '../../../../components/movie-credits'
 
-// export const metadata: Metadata = { title: 'Movie' }
-
-interface IParams {
-    params: {id: string}
-}
+interface IParams { params: {id: string} }
 
 export async function generateMetadata({params: {id}}: IParams) {
     const movie = await getMovie(id)

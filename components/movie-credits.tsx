@@ -1,8 +1,8 @@
-// import { API_URL } from '../(Home)/page'
-const API_URL = 'https://nomad-movies.nomadcoders.workers.dev/movies'
+import { API_MOVIE_LIST } from '../app/api-path'
 
 async function getCredits(id: string) {
-    const response = await fetch(`${API_URL}/${id}/credits`)
+    // await new Promise(resolve => setTimeout(resolve, 1000))
+    const response = await fetch(`${API_MOVIE_LIST}/${id}/credits`)
     const json = await response.json()
     return json
 }
